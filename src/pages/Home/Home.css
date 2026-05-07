@@ -1,0 +1,86 @@
+.hero {
+    position: relative;
+}
+
+.hero-banner {
+    width: 100%;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, .5), black 85%);
+}
+
+.hero-caption {
+    position: absolute;
+    height: 87%;
+    width: 100%;
+    padding-left: 60px;
+    bottom: 0;
+}
+
+.info-caption {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.info-season {
+    color: #fff;
+    font-size: 1.5vw;
+    margin: 1vw 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.hero-title {
+    width: 100%;
+    max-width: 690px;
+}
+
+.hero-caption p {
+    max-width: 700px;
+    font-size: 1.1vw;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+}
+
+.hero-btn {
+    display: flex;
+    margin-top: 1.5vw;
+}
+
+.hero-btn .btn img {
+    width: 40px;
+}
+
+.more-btn {
+    width: 50px !important;
+}
+
+.hero-btn .btn {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    padding: 0.3rem 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+
+}
+
+.hero-btn .btn-dark{
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+.hero-btn .btn:hover{
+    background: #ffffffbf;
+}
+
+.hero-btn .btn.btn-dark:hover{
+    background: #6d6d6e66;
+}
