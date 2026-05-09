@@ -1,0 +1,25 @@
+.title-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.title-cards h2 {
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.card-list {
+    display: flex;
+    gap: 10px;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list img {
+    border-radius: 4px;
+    cursor: pointer;
+    width: 292.328px;
+}

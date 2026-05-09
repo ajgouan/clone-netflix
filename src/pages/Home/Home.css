@@ -5,6 +5,7 @@
 .hero-banner {
     width: 100%;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, .5), black 85%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .5), black 85%);
 }
 
 .hero-caption {
@@ -16,11 +17,7 @@
 }
 
 .info-caption {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    width: 100%;
 
 }
 
@@ -83,4 +80,9 @@
 
 .hero-btn .btn.btn-dark:hover{
     background: #6d6d6e66;
+}
+
+.more-cards {
+    padding-left: 60px;
+    background: rgb(20,20,20);
 }
