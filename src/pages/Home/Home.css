@@ -86,3 +86,79 @@
     padding-left: 60px;
     background: rgb(20,20,20);
 }
+
+@media (max-width: 1024px) {
+    .hero-caption .title-cards {
+        display: none;
+    }
+
+    .hero-btn {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-caption {
+        padding-left: 4%;
+    }
+
+    .info-caption {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+
+    .hero-caption p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .hero-btn .btn img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .hero-btn .btn {
+        font-size: 14px;
+    }
+
+    .more-cards {
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    .info-caption .hero-title {
+        display: none;
+    }
+
+    .info-caption {
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    .info-season {
+        font-size: 14px;
+    }
+
+    .hero-caption p {
+        font-size: 11px;
+        
+    }
+
+    .hero-btn .btn img {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+
+    .hero-btn .btn {
+        font-size: 14px;
+        padding: 7px 15px;
+        margin-right: 8px;
+    }
+
+    .more-btn {
+        width: 30px !important;
+    }
+}

@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Player.css'
-import back_arrow_icon from '../../assets/back_arrow_icon.png'
-import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { ArrowLeft } from 'lucide-react';
 
 const Player = () => {
 
@@ -34,7 +33,7 @@ const Player = () => {
 
 	return (
 		<div className='player'>
-			<img src={back_arrow_icon} alt="" onClick={() => navigate(-1)} />
+			<ArrowLeft className='arrow-left' onClick={() => navigate(-2)} />
 			<iframe width='90%' height='90%' src={`https://www.youtube.com/embed/${apiData.key}`} title='trailer' frameborder="0" allowFullscreen></iframe>
 			<div className="player-info">
 				<p><span>Date de sortie</span> : {apiData.published_at.slice(0,10)}</p>

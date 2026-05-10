@@ -1,21 +1,16 @@
 .player {
+    background-color: black;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.player img {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    cursor: pointer;
+    padding-top: 20px;
 }
 
 .player iframe {
-    border-radius: 10px;
+    width: 100%;
+    margin-top: 25px;
 }
 
 .player-info {
@@ -26,9 +21,24 @@
     justify-content: space-between;
 }
 
-.player-info span{
+.player-info span {
     text-decoration: underline;
-    background: #5c5c5c;
+    background: #333333;
     border-radius: 4px;
     padding: 2px;
+}
+
+.player .arrow-left {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding: 2px 7px ;
+}
+
+.player .arrow-left:hover {
+    background: #333333;
+    border-radius: 100%;
 }
