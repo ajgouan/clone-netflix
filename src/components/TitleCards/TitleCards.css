@@ -23,3 +23,20 @@
     cursor: pointer;
     width: 292.328px;
 }
+
+.card {
+    position: relative;
+}
+
+.card p {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
