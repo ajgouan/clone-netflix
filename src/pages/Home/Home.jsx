@@ -15,13 +15,12 @@ const Home = () => {
             <div className="hero">
                 <img src={hero_banner} alt="" className="hero-banner" />
                 <div className="hero-caption">
-                    <div className="info-caption">
-                        <img src={title_logo} alt="" className="hero-title" />
-                        <div className="info-season">
-                            Regardez la saison 2 maintenant
-                        </div>
-                        <p>
-                            Ses jours étant comptés, le lycéen Yuji décide de
+                    <img src={title_logo} alt="" className="hero-title" />
+                    <div className="info-season">
+                        Regardez la saison 2 maintenant
+                    </div>
+                    <p>
+                        Ses jours étant comptés, le lycéen Yuji décide de
                             dévorer les 19 derniers doigts d'une puissante
                             malédiction pour que celle-ci soit annéantie avec
                             lui.
@@ -41,7 +40,6 @@ const Home = () => {
                             </button>
                         </div>
                         <TitleCards />
-                    </div>
                 </div>
             </div>
             <div className="more-cards">

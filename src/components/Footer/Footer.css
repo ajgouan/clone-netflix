@@ -42,3 +42,29 @@
     font-weight: normal;
     font-size: 10px;
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 2em 4%;
+        margin: 20px 0;
+    }
+    .footer li {
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer li {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer li {
+        width: 48%;
+        font-size: 11px;
+    }
+    .footer-icon img {
+        width: 20px;
+    }
+}

@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+    overflow: hidden;
 }
 
 .hero-banner {
@@ -92,24 +93,57 @@
         display: none;
     }
 
-    .hero-btn {
-        margin-bottom: 30px;
+    .hero-caption {
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-btn .btn {
+        padding: 8px 14px;
+        font-size: 16px;
+    }
+
+    .hero-btn .btn img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .hero-caption .hero-title {
+        width: 50%;
+        max-width: 450px;
+    }
+
+    .hero-caption p {
+        font-size: 1.4vw;
+        max-width: 80%;
     }
 }
 
 @media (max-width: 800px) {
     .hero-caption {
         padding-left: 4%;
+        padding-right: 4%;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .info-caption {
+    .hero-caption .hero-title {
+        width: 55%;
+        max-width: 350px;
+    }
+
+    .info-season {
+        font-size: 16px;
         margin-bottom: 10px;
-        width: 40%;
     }
 
     .hero-caption p {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        max-width: 80%;
     }
 
     .hero-btn .btn img {
@@ -120,6 +154,7 @@
 
     .hero-btn .btn {
         font-size: 14px;
+        padding: 8px 15px;
     }
 
     .more-cards {
@@ -128,37 +163,54 @@
 }
 
 @media (max-width: 500px) {
-    .info-caption .hero-title {
-        display: none;
+    .hero-caption {
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        box-sizing: border-box;
     }
 
-    .info-caption {
-        width: 100%;
-        margin-top: 3em;
+    .hero-caption .hero-title {
+        width: 55%;
+        max-width: 220px;
     }
 
     .info-season {
-        font-size: 14px;
+        font-size: 11px;
+        margin: 6px 0;
     }
 
     .hero-caption p {
-        font-size: 11px;
-        
+        font-size: 10px;
+        line-height: 1.4;
+        max-width: 90%;
+        margin-bottom: 8px;
     }
 
-    .hero-btn .btn img {
-        width: 15px;
-        height: 15px;
-        object-fit: contain;
+    .hero-btn {
+        margin-top: 8px;
     }
 
     .hero-btn .btn {
-        font-size: 14px;
-        padding: 7px 15px;
+        font-size: 13px;
+        padding: 6px 14px;
         margin-right: 8px;
+        margin-bottom: 0;
+        gap: 6px;
+        border-radius: 4px;
+    }
+
+    .hero-btn .btn img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
     }
 
     .more-btn {
-        width: 30px !important;
+        width: 28px !important;
+    }
+
+    .more-cards {
+        padding-left: 4%;
     }
 }

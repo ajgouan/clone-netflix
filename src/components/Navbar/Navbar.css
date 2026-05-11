@@ -103,28 +103,82 @@
     transition: all .4s ease;
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .navbar-left {
+        gap: 30px;
+    }
+
+    .navbar-left ul {
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    .navbar-left img {
+        width: 80px;
+    }
+    
+    .navbar-right {
+        gap: 15px;
+    }
+}
+
 @media (max-width: 800px) {
     .navbar {
-        padding: 20px 4%;
+        padding: 15px 4%;
     }
 
     .navbar-left ul {
         display: none;
     }
 
-    .navbar img {
-        height: 25px;
+    .navbar-left img {
+        width: 75px;
     }
 }
 
 @media (max-width: 500px) {
-    .navbar img {
-        height: 20px;
+    .navbar {
+        padding: 12px 4%;
+        box-sizing: border-box;
+    }
+
+    .navbar-left {
+        gap: 12px;
+    }
+
+    .navbar-left img {
+        width: 70px;
+        height: auto;
     }
 
     .navbar-right {
-        gap: 10px;
+        gap: 15px;
+    }
+
+    .navbar-right .icons {
+        width: 18px;
+    }
+
+    .navbar-right .profile {
+        width: 24px;
+    }
+
+    .navbar-profile {
+        gap: 5px;
+    }
+
+    .navbar-profile img[alt=""] {
+        width: 10px;
+    }
+
+    .notif-wrapper::after {
+        font-size: 8px;
+        top: -4px;
+        right: -6px;
+        padding: .05em .4em;
     }
 }
-
-
