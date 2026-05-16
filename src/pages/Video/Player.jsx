@@ -33,7 +33,7 @@ const Player = () => {
 
 	return (
 		<div className='player'>
-			<ArrowLeft className='arrow-left' onClick={() => navigate(-2)} />
+			<ArrowLeft className='arrow-left' onClick={() => navigate('/')}/>
 			<iframe width='90%' height='90%' src={`https://www.youtube.com/embed/${apiData.key}`} title='trailer' frameborder="0" allowFullscreen></iframe>
 			<div className="player-info">
 				<p><span>Date de sortie</span> : {apiData.published_at.slice(0,10)}</p>
